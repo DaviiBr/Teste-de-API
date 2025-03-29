@@ -1,0 +1,80 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Dependências
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs
+logs/
+*.log
+
+# Configuração de Ambiente
+.env
+*.env
+
+# Build e Cache
+*.egg-info/
+dist/
+build/
+
+# Banco de Dados Local
+*.sqlite3
+*.db
+
+# IDEs e SO
+.vscode/
+.idea/
+.DS_Store
+
+# 🔥 BACKEND (Python)
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+backend/.env
+backend/venv/
+backend/logs/
+backend/*.sqlite3
+backend/*.db
+
+# 🎨 FRONTEND (Vue.js + Vite)
+frontend/node_modules/
+frontend/.vscode/
+frontend/dist/
+frontend/.cache/
+
+# 📦 Dependências
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# 🛠️ Sistema e IDEs
+.DS_Store
+.idea/
+.vscode/
