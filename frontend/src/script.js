@@ -37,14 +37,12 @@ export default {
         const params = {
           page: currentPage.value,
           limit: pageSize,
-          // Filtros existentes
           ...(cnpj.value && { cnpj: cnpj.value }),
           ...(cidade.value && { cidade: cidade.value }),
           ...(uf.value && { uf: uf.value.toUpperCase() }),
           ...(registroOperadora.value && { registro_operadora: registroOperadora.value }),
           ...(nomeFantasia.value && { nome_fantasia: nomeFantasia.value }),
           ...(representante.value && { representante: representante.value }),
-          // Novos filtros de data
           ...(dateOrder.value && { date_order: dateOrder.value }),
           ...(startDate.value && { start_date: startDate.value }),
           ...(endDate.value && { end_date: endDate.value })
@@ -153,7 +151,7 @@ export default {
       }
     };
     const isDateKey = (key) => {
-      const dateKeys = ['data', 'date', 'created', 'updated']; // Adicione aqui os nomes de campos que contêm datas
+      const dateKeys = ['data', 'date', 'created', 'updated']; 
       return dateKeys.some(dateKey => key.toLowerCase().includes(dateKey));
     };
 

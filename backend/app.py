@@ -8,8 +8,8 @@ CORS(app)  # Habilita CORS para todas as rotas
 @app.route('/operadoras', methods=['GET'])
 def get_operadoras():
     cnpj = request.args.get('cnpj')
-    cidade = request.args.get('cidade')  # Novo filtro
-    uf = request.args.get('uf')                     # Novo filtro
+    cidade = request.args.get('cidade')  
+    uf = request.args.get('uf')                    
     registro_operadora = request.args.get('registro_operadora')
     nome_fantasia = request.args.get('nome_fantasia')
     representante = request.args.get('representante')
@@ -67,8 +67,6 @@ def get_operadoras():
 
         cursor.execute(query, params)
         operadoras = cursor.fetchall()
-
-        # ... (mantenha o restante da lógica existente)
 
         # Conta o total de operadoras para determinar o número de páginas
         cursor.execute("SELECT COUNT(*) FROM operadoras;")

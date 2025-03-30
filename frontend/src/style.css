@@ -152,7 +152,6 @@ h1 {
   border-bottom-right-radius: 12px; /* Bordas arredondadas para a última célula da última linha */
 }
 
-/* Adicionar um pequeno sombreado nas células */
 .styled-table td, .styled-table th {
   transition: background-color 0.3s, box-shadow 0.3s ease;
 }
